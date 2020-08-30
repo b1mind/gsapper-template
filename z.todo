@@ -1,27 +1,15 @@
 Migrate:
-  ☐ components
+  ✔ components @done(20-08-30 01:27)
   ☐ layout for imports?
   ☐ routes?
-  ☐ gsap.tar
-  ✔ script for gh-pages @done(20-08-29 20:12)
-  ✔ svelte.config @done(20-08-29 20:12)
-  ✔ prettierrc @done(20-08-29 20:12)
-  
-Configure:
-  ☐ create git and link to hub
-  ✔ gsap imports in client.js @done(20-08-29 21:00)
-  ✔ package.json @done(20-08-29 20:51)
-  ✔ sapper deploy script @done(20-08-29 20:51)
-  ✔ change server path @done(20-08-29 20:51)
-  ✔ autoprefix @done(20-08-29 20:51)
   
 Cleanup:
-  ☐ test and push then update npm
+  ☐ update npm
   ☐ readme todo list
-  ☐ add dummy_scripts for public
   
 Tooling:
   ☐ postCSS combine query
+  ☐ add custom css defaults 
 
 Code:
   ☐ triggers no timeline
@@ -31,3 +19,17 @@ Code:
 
 Fix:
   ☐ tigger with timeline does not like being nested in components
+
+Archive:
+  ✔ gsap.tar @done(20-08-29 23:17) @project(Migrate)
+  ✔ script for gh-pages @done(20-08-29 20:12) @project(Migrate)
+  ✔ svelte.config @done(20-08-29 20:12) @project(Migrate)
+  ✔ prettierrc @done(20-08-29 20:12) @project(Migrate)
+  ✔ create git and link to hub @done(20-08-29 23:17) @project(Configure)
+  ✔ gsap imports in client.js @done(20-08-29 21:00) @project(Configure)
+  ✔ package.json @done(20-08-29 20:51) @project(Configure)
+  ✔ sapper deploy script @done(20-08-29 20:51) @project(Configure)
+  ✔ change server path @done(20-08-29 20:51) @project(Configure)
+  ✔ autoprefix @done(20-08-29 20:51) @project(Configure)
+  ✔ test and push @done(20-08-29 23:18) @project(Cleanup)
+  ✔ add dummy_scripts for public @done(20-08-29 23:18) @project(Cleanup)
