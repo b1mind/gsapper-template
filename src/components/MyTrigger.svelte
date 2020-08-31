@@ -19,7 +19,9 @@
 
   function MakeTrigger() {
     let animation
-    !tl ? (animation = gsap[tweenType](target.children, { ...tween })) : (animation = tl)
+    !tl
+      ? (animation = gsap[tweenType](target.children, { ...tween }))
+      : (animation = tl)
     st = ScrollTrigger.create({
       trigger: target,
       animation: animation,
@@ -30,18 +32,17 @@
   //housekeeping, keeping it svelter
   onMount(() => {
     MakeTrigger()
+    // tl ? setTimeLine() : false
     return () => {
       st.kill()
-      if (!tl) return
+      /* if (!tl) return
       const targets = tl.getChildren()
       tl.kill()
       for (let i = 0; i < targets.length; i++) {
         if (targets[i].targets().length) {
           gsap.set(targets[i].targets(), { clearProps: 'all' })
         }
-      }
-
-      // ScrollTrigger.refresh()
+      } */
     }
   })
 
@@ -61,6 +62,9 @@
     padding: 2rem;
     background: salmon;
     overflow: hidden;
+    @media (min-width: 400px) {
+      background: yellow;
+    }
   }
 
   .test {

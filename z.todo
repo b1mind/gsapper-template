@@ -8,14 +8,20 @@ Cleanup:
   ☐ readme todo list
   
 Tooling:
-  ☐ postCSS combine query
+  ☐ postCSS combine query //?needed?
   ☐ add custom css defaults 
 
 Code:
   ☐ triggers no timeline
-  ☐ timeline trigger
+  ☐ better timeline trigger
   ☐ timeline comopent
   ☐ better animate action
+  ☐ svg stagger/trigger
+
+ReadMe:
+  ☐ better guid for gsap
+  ✔ gh-pages deploy @done(20-08-30 19:18)
+  ☐ animated gif example
 
 Fix:
   ☐ tigger with timeline does not like being nested in components
@@ -25,11 +31,13 @@ Archive:
   ✔ script for gh-pages @done(20-08-29 20:12) @project(Migrate)
   ✔ svelte.config @done(20-08-29 20:12) @project(Migrate)
   ✔ prettierrc @done(20-08-29 20:12) @project(Migrate)
+
   ✔ create git and link to hub @done(20-08-29 23:17) @project(Configure)
   ✔ gsap imports in client.js @done(20-08-29 21:00) @project(Configure)
   ✔ package.json @done(20-08-29 20:51) @project(Configure)
   ✔ sapper deploy script @done(20-08-29 20:51) @project(Configure)
   ✔ change server path @done(20-08-29 20:51) @project(Configure)
   ✔ autoprefix @done(20-08-29 20:51) @project(Configure)
+
   ✔ test and push @done(20-08-29 23:18) @project(Cleanup)
   ✔ add dummy_scripts for public @done(20-08-29 23:18) @project(Cleanup)

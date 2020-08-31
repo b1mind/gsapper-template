@@ -5,7 +5,9 @@
 
   let tl = gsap.timeline({})
   function setTimelines() {
-    tl.to('.pinned', { background: 'blue' }).to('.someText', { color: 'yellow' }).to('.someText', { x: 200 })
+    tl.to('.pinned', { background: 'blue' })
+      .to('.someText', { x: 200, color: 'yellow' })
+      .to('.pinned', { background: 'green' })
   }
 
   onMount(() => {
@@ -27,15 +29,37 @@
   <figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
-<div class="spacer">
-  <div class="test">
-    <MyTrigger stClass="pinned" {tl} stOptions={{ pin: true, start: 'top 200', toggleActions: 'play reverse play reverse' }}>
-      <div class="someText">Some timeline</div>
-    </MyTrigger>
-  </div>
+<div class="test">
+  <MyTrigger
+    stClass="pinned"
+    {tl}
+    stOptions={{ pin: true, scrub: true, start: 'top 200', end: '300 top', toggleActions: 'play reverse play reverse' }}
+  >
+    <div class="someText">Some timeline</div>
+  </MyTrigger>
 </div>
 
-<MyTrigger stClass="test" stOptions={{ pin: true, scrub: true, start: 'center center', end: '300 top' }} tween={{ autoAlpha: 0, y: 100, stagger: 0.5 }}>
+<div class="spacer" />
+
+<MyTrigger
+  stClass="test"
+  stOptions={{ pin: true, scrub: true, start: 'center center', end: '300 top' }}
+  tween={{ autoAlpha: 0, y: 100, stagger: 0.5 }}
+>
+  <span>one</span>
+  <span>two</span>
+  <span>three</span>
+  <span>four</span>
+  <span>five</span>
+  <span>six</span>
+</MyTrigger>
+
+<MyTrigger
+  stClass="suk"
+  stOptions={{ pin: true, scrub: true, start: 'center center', end: '300 top' }}
+  tween={{ autoAlpha: 0, y: 100, stagger: 0.5 }}
+  tweenType={'to'}
+>
   <span>one</span>
   <span>two</span>
   <span>three</span>
