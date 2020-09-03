@@ -1,15 +1,27 @@
 # 1M Gsapper Template
 
-‼ Important to use gsap.ScrollTrigger you must sign up and download zip for bonus.plugins. ‼
-
 _This Template is currently based on sapper#rollup template._
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+The default Svelte/[Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+
+This is a work in progress not for production use.
+
+❗ Important to use gsap you must sign up @ [GreenSock](https://greensock.com/docs/v3/Installation) and download zip, then extract gsap-bonus.tgz to /scripts/ folder. ❗
 
 ## Getting started with Gsapper
 
-💚💚 Sapper Template with Gsap's ScrollTrigger 🧦🧦
+💚💚 Gsap and Sapper Template 🧦🧦
 
 Adding more as I test. Full ReadMe coming soon.
+
+\*\*Not all bonus plugins are free, to use any premium plugins you must purchase the correct membership from [GreenSock Club](https://greensock.com/club/).
+
+## Svelte Components
+
+I am working on creating Svelte components for easy use of different gsap features.
+
+## Gsap as action
+
+Actions in Svelte are a great way to use third party libs. Start with use:animate
 
 ### gh-pages deploy
 
