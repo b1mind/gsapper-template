@@ -5,6 +5,5 @@
   "svelteAllowShorthand": true,
   "htmlWhitespaceSensitivity": "strict",
   "semi": false,
-  "singleQuote": true,
-  "embeddedLanguageFormatting": "off"
+  "singleQuote": true
 }
