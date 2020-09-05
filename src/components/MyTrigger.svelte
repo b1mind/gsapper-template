@@ -48,8 +48,8 @@
 
   afterUpdate(() => {
     //Todo would like this to control when its added or leaves
-    ScrollTrigger.refresh()
-    console.log(`component trigger added all refreshed`)
+    // ScrollTrigger.refresh()
+    // console.log(`component trigger added all refreshed`)
   })
 </script>
 

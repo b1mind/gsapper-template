@@ -1,5 +1,6 @@
 <script>
-  import { onMount } from 'svelte'
+  import { afterUpdate, onMount } from 'svelte'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
   import { gsap } from 'gsap'
   import MyTrigger from '../components/MyTrigger.svelte'
 
@@ -12,6 +13,10 @@
 
   onMount(() => {
     setTimelines()
+  })
+
+  afterUpdate(() => {
+    ScrollTrigger.refresh()
   })
 </script>
 
@@ -29,15 +34,13 @@
   <figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
-<div class="test">
-  <MyTrigger
-    stClass="pinned"
-    {tl}
-    stOptions={{ pin: true, scrub: true, start: 'top 200', end: '300 top', toggleActions: 'play reverse play reverse' }}
-  >
-    <div class="someText">Some timeline</div>
-  </MyTrigger>
-</div>
+<MyTrigger
+  stClass="pinned"
+  {tl}
+  stOptions={{ pin: true, scrub: true, start: 'top 200', end: '300 top', toggleActions: 'play reverse play reverse' }}
+>
+  <div class="someText">Some timeline</div>
+</MyTrigger>
 
 <div class="spacer" />
 
@@ -102,7 +105,7 @@
 
   img {
     width: 100%;
-    min-height: 250px;
+    height: 250px;
     max-width: 400px;
     margin: 0 0 1em 0;
   }

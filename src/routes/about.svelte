@@ -1,5 +1,4 @@
 <script>
-  //todo another highlight
   import MyTrigger from '../components/MyTrigger.svelte'
 </script>
 
@@ -27,7 +26,6 @@
 <div class="spacer" />
 
 <style lang="scss">
-  // @ highlight me
   .spacer {
     min-height: 700px;
     margin: 1rem 0;
