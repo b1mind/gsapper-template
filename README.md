@@ -1,31 +1,34 @@
 # 1M Gsapper Template
 
-_This Template is currently based on sapper#rollup template._
-The default Svelte/[Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+_This Template based on Svelte/[Sapper](https://github.com/sveltejs/sapper) template._
 
+💚💚 Gsap-Sapper Template 🧦🧦
 This is a work in progress not for production use.
 
-❗ Important to use gsap you must sign up @ [GreenSock](https://greensock.com/docs/v3/Installation) and download zip, then extract gsap-bonus.tgz to /scripts/ folder. ❗
+### Whats Inside?
+
+[svelte-preprocess](https://github.com/sveltejs/svelte-preprocess)
+[svelte-fa](https://github.com/Cweili/svelte-fa)
+[gh-pages](https://cweili.github.io/svelte-fa/)
 
 ## Getting started with Gsapper
 
-💚💚 Gsap and Sapper Template 🧦🧦
+❗ Important to use gsap you must sign up @ [GreenSock](https://greensock.com/docs/v3/Installation) and download zip❗
+_\*\*To use any premium plugins you must purchase the correct membership from [GreenSock Club](https://greensock.com/club/)._
 
-Adding more as I test. Full ReadMe coming soon.
+Extract gsap-bonus.tgz to /scripts/ folder.
 
-\*\*Not all bonus plugins are free, to use any premium plugins you must purchase the correct membership from [GreenSock Club](https://greensock.com/club/).
-
-## Svelte Components
+### Svelte Components
 
 I am working on creating Svelte components for easy use of different gsap features.
 
-## Gsap as action
+### Gsap as action
 
 Actions in Svelte are a great way to use third party libs. Start with use:animate
 
-### gh-pages deploy
+### Deploy GitHub Pages
 
-_you can also use gh-pages lib but must configure_
+_this uses gh-pages but must configure first_
 
 ```
 # for use with master branch github pages
@@ -52,8 +55,18 @@ git push -u origin <your-branch-name>
 
 Finally configure your `/scripts/edit_deploy.js` and rename to `deploy.js`
 
-### Included
+### Using Font Awesome
 
-svelte-preprocess (postcss,pug,scss)
-gh-pages (will include guide for us all files are included)
-fa-svelte for Font Awesome5 cause well its awesome
+```html
+<script>
+  import Fa from {svelte-fa}
+  import {faHatWizard}
+  const themeFa = {
+    size: '3x',
+    secondaryOpacity: 1,
+    primaryColor: '#0438a1',
+    secondaryColor: '#6c6c6c',
+  }
+</script>
+<Fa icon="{faHatWizard}" secondaryOpacity="{1}" {...themeFa} />
+```
