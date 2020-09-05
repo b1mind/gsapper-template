@@ -1,40 +1,44 @@
 Migrate:
-  ☐ layout for imports?
-  ☐ routes?
-  
+	☐ layout for imports?
+	✔ routes? make new routes @done(20-09-02 23:05)
+	
 Tooling:
-  ☐ postCSS combine query //?needed?
-  ☐ add custom css defaults 
-  ☐ global scss or import
-  
+	☐ postCSS combine query //?needed?
+	☐ add custom scss defaults 
+	☐ global scss build or import
+	
 Code:
-  ☐ triggers no timeline
-  ☐ better timeline trigger
-  ☐ timeline comopent
-  ☐ better animate action
-  ☐ svg stagger/trigger
+	☐ finish triggers no timeline
+	☐ better timeline trigger
+	☐ timeline comopent
+	☐ better animate action
+	☐ svg stagger/trigger
+	☐ animated cards compnonet
+	☐ page transisions with barbra.js?
+	☐ combine use of svelte animations and gsap 👨‍🔬
 
 ReadMe:
-  ☐ better guid for gsap
-  ☐ animated gif example
+	☐ license ? not for use yet
+	☐ better guide for gsap use with svelte
+	☐ animated gif example showing use
 
 Fix:
-  ☐ tigger with timeline does not like being nested in components
+	☐ tigger with timeline does not like being nested in components
 
 Archive:
-  ✔ components @done(20-08-30 01:27) @project(Migrate)
-  ✔ update npm @done(20-09-02 21:37) @project(Cleanup)
-  ✔ readme todo list @done(20-09-02 21:37) @project(Cleanup)
-  ✔ gh-pages deploy @done(20-08-30 19:18) @project(ReadMe)
-  ✔ gsap.tar @done(20-08-29 23:17) @project(Migrate)
-  ✔ script for gh-pages @done(20-08-29 20:12) @project(Migrate)
-  ✔ svelte.config @done(20-08-29 20:12) @project(Migrate)
-  ✔ prettierrc @done(20-08-29 20:12) @project(Migrate)
-  ✔ create git and link to hub @done(20-08-29 23:17) @project(Configure)
-  ✔ gsap imports in client.js @done(20-08-29 21:00) @project(Configure)
-  ✔ package.json @done(20-08-29 20:51) @project(Configure)
-  ✔ sapper deploy script @done(20-08-29 20:51) @project(Configure)
-  ✔ change server path @done(20-08-29 20:51) @project(Configure)
-  ✔ autoprefix @done(20-08-29 20:51) @project(Configure)
-  ✔ test and push @done(20-08-29 23:18) @project(Cleanup)
-  ✔ add dummy_scripts for public @done(20-08-29 23:18) @project(Cleanup)
+	✔ components @done(20-08-30 01:27) @project(Migrate)
+	✔ update npm @done(20-09-02 21:37) @project(Cleanup)
+	✔ readme todo list @done(20-09-02 21:37) @project(Cleanup)
+	✔ gh-pages deploy @done(20-08-30 19:18) @project(ReadMe)
+	✔ gsap.tar @done(20-08-29 23:17) @project(Migrate)
+	✔ script for gh-pages @done(20-08-29 20:12) @project(Migrate)
+	✔ svelte.config @done(20-08-29 20:12) @project(Migrate)
+	✔ prettierrc @done(20-08-29 20:12) @project(Migrate)
+	✔ create git and link to hub @done(20-08-29 23:17) @project(Configure)
+	✔ gsap imports in client.js @done(20-08-29 21:00) @project(Configure)
+	✔ package.json @done(20-08-29 20:51) @project(Configure)
+	✔ sapper deploy script @done(20-08-29 20:51) @project(Configure)
+	✔ change server path @done(20-08-29 20:51) @project(Configure)
+	✔ autoprefix @done(20-08-29 20:51) @project(Configure)
+	✔ test and push @done(20-08-29 23:18) @project(Cleanup)
+	✔ add dummy_scripts for public @done(20-08-29 23:18) @project(Cleanup)
