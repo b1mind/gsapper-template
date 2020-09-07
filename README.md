@@ -1,22 +1,24 @@
 # 1M Gsapper Template
 
-_This Template based on Svelte/[Sapper](https://github.com/sveltejs/sapper) template._
-
 💚💚 Gsap-Sapper Template 🧦🧦
+_based on Svelte/[Sapper](https://github.com/sveltejs/sapper) template._<br>
 This is a work in progress not for production use.
 
 ### Whats Inside?
 
-[svelte-preprocess](https://github.com/sveltejs/svelte-preprocess)
-[svelte-fa](https://github.com/Cweili/svelte-fa)
-[gh-pages](https://cweili.github.io/svelte-fa/)
+- [svelte-preprocess](https://github.com/sveltejs/svelte-preprocess)
+- [svelte-fa](https://github.com/Cweili/svelte-fa)
+- [gh-pages](https://cweili.github.io/svelte-fa/)
 
 ## Getting started with Gsapper
+
+`npx degit "b1m1nd/gsapper-template#develop" <app-name>`
 
 ❗ Important to use gsap you must sign up @ [GreenSock](https://greensock.com/docs/v3/Installation) and download zip❗
 _\*\*To use any premium plugins you must purchase the correct membership from [GreenSock Club](https://greensock.com/club/)._
 
-Extract gsap-bonus.tgz to /scripts/ folder.
+Extract gsap-bonus.tgz to /scripts/ folder and install dependencies.
+`npm -i`
 
 ### Svelte Components
 
@@ -25,6 +27,10 @@ I am working on creating Svelte components for easy use of different gsap featur
 ### Gsap as action
 
 Actions in Svelte are a great way to use third party libs. Start with use:animate
+
+# Extras
+
+Added libs to enhance production.
 
 ### Deploy GitHub Pages
 
@@ -59,14 +65,15 @@ Finally configure your `/scripts/edit_deploy.js` and rename to `deploy.js`
 
 ```html
 <script>
-  import Fa from {svelte-fa}
-  import {faHatWizard}
-  const themeFa = {
+  import Fa from 'svelte-fa'
+  import { faUser } from '@fortawesome/free-solid-svg-icons'
+  const optionsFa = {
+    flip: 'horizontal',
     size: '3x',
-    secondaryOpacity: 1,
-    primaryColor: '#0438a1',
-    secondaryColor: '#6c6c6c',
+    pull: 'left',
+    size: '2x',
+    color: '#ff0000',
   }
 </script>
-<Fa icon="{faHatWizard}" secondaryOpacity="{1}" {...themeFa} />
+<Fa icon="{faUser}" style="background: skyblue" {...optionsFa} />
 ```
