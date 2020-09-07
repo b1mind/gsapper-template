@@ -69,9 +69,8 @@ Finally configure your `/scripts/edit_deploy.js` and rename to `deploy.js`
   import { faUser } from '@fortawesome/free-solid-svg-icons'
   const optionsFa = {
     flip: 'horizontal',
-    size: '3x',
     pull: 'left',
-    size: '2x',
+    size: '1x',
     color: '#ff0000',
   }
 </script>
