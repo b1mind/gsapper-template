@@ -4,6 +4,15 @@
   import { gsap } from 'gsap'
   import MyTrigger from '../components/MyTrigger.svelte'
 
+  import Fa from 'svelte-fa'
+  import { faUser, faFlag } from '@fortawesome/free-solid-svg-icons'
+  // const themeFa = {
+  //   size: '3x',
+  //   secondaryOpacity: 1,
+  //   primaryColor: '#0438a1',
+  //   secondaryColor: '#6c6c6c',
+  // }
+
   let tl = gsap.timeline({})
   function setTimelines() {
     tl.to('.pinned', { background: 'blue' })
@@ -34,27 +43,28 @@
   <figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
-<MyTrigger
-  stClass="pinned"
-  {tl}
-  stOptions={{ pin: true, scrub: true, start: 'top 200', end: '300 top', toggleActions: 'play reverse play reverse' }}
->
-  <div class="someText">Some timeline</div>
-</MyTrigger>
+<div class="test">
+  <MyTrigger
+    stClass="pinned"
+    {tl}
+    stOptions={{ pin: true, scrub: true, start: 'top 200', end: '300 top', toggleActions: 'play reverse play reverse' }}
+  >
+    <div class="someText">Some timeline</div>
+  </MyTrigger>
+</div>
 
 <div class="spacer" />
 
 <MyTrigger
   stClass="test"
   stOptions={{ pin: true, scrub: true, start: 'center center', end: '300 top' }}
-  tween={{ autoAlpha: 0, y: 100, stagger: 0.5 }}
+  tween={{ autoAlpha: 0, x: 100, stagger: 0.5 }}
 >
-  <span>one</span>
-  <span>two</span>
-  <span>three</span>
-  <span>four</span>
-  <span>five</span>
-  <span>six</span>
+  <Fa icon={faFlag} />
+  <Fa icon={faFlag} />
+  <Fa icon={faUser} />
+  <Fa icon={faFlag} />
+  <Fa icon={faFlag} />
 </MyTrigger>
 
 <MyTrigger
@@ -63,12 +73,12 @@
   tween={{ autoAlpha: 0, y: 100, stagger: 0.5 }}
   tweenType={'to'}
 >
-  <span>one</span>
-  <span>two</span>
-  <span>three</span>
-  <span>four</span>
-  <span>five</span>
-  <span>six</span>
+  <p>one</p>
+  <p>two</p>
+  <p>three</p>
+  <p>four</p>
+  <p>five</p>
+  <p>six</p>
 </MyTrigger>
 
 <div class="spacer" />
