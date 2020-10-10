@@ -5,6 +5,7 @@ import { afterUpdate, beforeUpdate } from 'svelte'
 export function animate(node, { type, ...args }) {
   let method = gsap[type]
   let newAnimate = method(node, args)
+
   return {
     newAnimate,
     destroy() {
@@ -21,6 +22,7 @@ export function triggerMe(node, { ...args }) {
     toggleActions: 'play none none reverse',
     //markers: true,
   })
+
   return {
     method,
     // destroy() {
@@ -38,6 +40,7 @@ export function newTrigger(node, { ...args }) {
     ...args,
     //markers: true,
   })
+
   return {
     method,
     destroy() {
@@ -57,6 +60,7 @@ export function pinScrub(node, { ...args }) {
     toggleActions: 'play none none reverse',
     //markers: true,
   })
+
   return {
     st,
     destroy() {
@@ -87,11 +91,13 @@ export function killTriggers() {
 //FixMe Refresh triggers - need one function to rule them all
 let needRefresh = true
 export function refreshTriggers() {
+
   if (!needRefresh) return
   afterUpdate(() => {
     ScrollTrigger.refresh()
     console.log(`All layout triggers refreshed`)
     needRefresh = false
   })
+
   needRefresh = true
 }

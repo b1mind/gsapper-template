@@ -7,6 +7,7 @@
   let st
 
   //set default props for trigger
+  export let tl = false
   export let stClass = 'triggered'
   export let tween = { autoAlpha: 0, x: '+=100', stagger: 0.3 }
   export let tweenType = 'from'
@@ -15,13 +16,13 @@
     end: 'bottom top',
     toggleActions: 'play none none reverse',
   }
-  export let tl = false
 
   function MakeTrigger() {
     let animation
     !tl
       ? (animation = gsap[tweenType](target.children, { ...tween }))
       : (animation = tl)
+
     st = ScrollTrigger.create({
       trigger: target,
       animation: animation,
@@ -48,6 +49,7 @@
 
   afterUpdate(() => {
     //Todo would like this to control when its added or leaves
+    //? would this be best done on page or layout or each component?
     // ScrollTrigger.refresh()
     // console.log(`component trigger added all refreshed`)
   })
@@ -68,7 +70,7 @@
   }
 
   .test {
-    background: cadetblue;
+    background: blue;
   }
 
   .active {
