@@ -6,12 +6,13 @@
 
   import Fa from 'svelte-fa'
   import { faUser, faFlag } from '@fortawesome/free-solid-svg-icons'
-  // const themeFa = {
-  //   size: '3x',
-  //   secondaryOpacity: 1,
-  //   primaryColor: '#0438a1',
-  //   secondaryColor: '#6c6c6c',
-  // }
+
+  const optionsFa = {
+    flip: 'horizontal',
+    size: '1x',
+    // pull: 'left',
+    color: '#ff0000',
+  }
 
   let tl = gsap.timeline({})
   function setTimelines() {
@@ -60,7 +61,7 @@
   stOptions={{ pin: true, scrub: true, start: 'center center', end: '300 top' }}
   tween={{ autoAlpha: 0, x: 100, stagger: 0.5 }}
 >
-  <Fa icon={faFlag} />
+  <Fa icon={faFlag} style="background: skyblue" {...optionsFa} />
   <Fa icon={faFlag} />
   <Fa icon={faUser} />
   <Fa icon={faFlag} />
